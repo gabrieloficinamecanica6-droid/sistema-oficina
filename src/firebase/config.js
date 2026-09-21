@@ -6,16 +6,16 @@ import { getAuth } from 'firebase/auth';
 // Substitua pelos dados do SEU projeto Firebase (Console > Configurações do projeto).
 // Nunca comite chaves de produção em repositórios públicos — use .env.local.
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: AIzaSyBRDnsLfhtiuVM0Ydg07NRMed8Qx1_iatQ,
+  authDomain: oficina-f3fdb.firebaseapp.com,
+  projectId: oficina-f3fdb,
+  storageBucket: oficina-f3fdb.firebasestorage.app,
+  messagingSenderId: 110443299158,
+  appId: 1:110443299158:web:29a5a791fc0743641f96f7,
   // OBRIGATÓRIO para Realtime Database (Firestore não precisa disso, por
   // isso não estava no .env antes). Pegue em Console > Realtime Database,
   // é a URL que aparece no topo da página (ex: https://SEU-PROJETO-default-rtdb.firebaseio.com)
-  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL
+  databaseURL: https://oficina-f3fdb-default-rtdb.firebaseio.com
 };
 
 export const app = initializeApp(firebaseConfig);
