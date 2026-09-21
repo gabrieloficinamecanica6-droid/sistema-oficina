@@ -1,0 +1,8 @@
+{
+  "name": "backup-scripts",
+  "private": true,
+  "description": "Script isolado de backup local — não faz parte do app web (frontend), roda só via Node no computador.",
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

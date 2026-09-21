@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ticket/OS card com borda perfurada — o elemento-assinatura do app,
+   remete a uma ordem de serviço física grampeada na bancada. */
+.ticket-edge {
+  background-image: radial-gradient(circle, #0B0D0F 3px, transparent 3px);
+  background-size: 14px 14px;
+  background-position: -7px center;
+  background-repeat: repeat-x;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #363D44; border-radius: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
