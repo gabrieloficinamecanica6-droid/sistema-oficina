@@ -11,7 +11,7 @@ import AuthScreen from './components/AuthScreen.jsx';
 import { auth } from './firebase/config';
 import { OFICINA_INFO } from './config/oficina';
 
-import Orcamentos from './components/Orcamentos';
+import Orcamentos from './components/Orcamentos.jsx';
 
 export default function App() {
   const [usuario, setUsuario] = useState(undefined);
