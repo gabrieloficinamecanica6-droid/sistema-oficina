@@ -7,6 +7,7 @@ import Financeiro from './components/Financeiro.jsx';
 import Estoque from './components/Estoque.jsx';
 import Backup from './components/Backup.jsx';
 import Clientes from './components/Clientes.jsx';
+import Orcamentos from './components/Orcamentos.jsx';
 import AuthScreen from './components/AuthScreen.jsx';
 import { auth } from './firebase/config';
 import { OFICINA_INFO } from './config/oficina';
