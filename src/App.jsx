@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Wrench, Gauge, Search, Wallet, Package, DownloadCloud, Users, LogOut } from 'lucide-react';
+import { Wrench, Gauge, Search, Wallet, Package, DownloadCloud, Users, FileText, LogOut } from 'lucide-react';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import Dashboard from './components/Dashboard.jsx';
 import HistoricoVeiculo from './components/HistoricoVeiculo.jsx';
@@ -33,6 +33,7 @@ export default function App() {
             <BotaoAba ativo={aba === 'dashboard'} onClick={() => setAba('dashboard')} icon={Gauge} label="Painel" />
             <BotaoAba ativo={aba === 'historico'} onClick={() => setAba('historico')} icon={Search} label="Buscar Placa" />
             <BotaoAba ativo={aba === 'clientes'} onClick={() => setAba('clientes')} icon={Users} label="Clientes" />
+            <BotaoAba ativo={aba === 'orcamentos'} onClick={() => setAba('orcamentos')} icon={FileText} label="Orçamentos" />
             <BotaoAba ativo={aba === 'estoque'} onClick={() => setAba('estoque')} icon={Package} label="Estoque" />
             <BotaoAba ativo={aba === 'financeiro'} onClick={() => setAba('financeiro')} icon={Wallet} label="Financeiro" />
             <BotaoAba ativo={aba === 'backup'} onClick={() => setAba('backup')} icon={DownloadCloud} label="Backup" />
@@ -44,6 +45,7 @@ export default function App() {
         {aba === 'dashboard' && <Dashboard />}
         {aba === 'historico' && <HistoricoVeiculo />}
         {aba === 'clientes' && <Clientes />}
+        {aba === 'orcamentos' && <Orcamentos />}
         {aba === 'estoque' && <Estoque />}
         {aba === 'financeiro' && <Financeiro />}
         {aba === 'backup' && <Backup />}
