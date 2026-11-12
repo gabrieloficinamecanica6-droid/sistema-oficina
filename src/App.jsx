@@ -4,6 +4,7 @@ import { onAuthStateChanged, signOut } from 'firebase/auth';
 import Dashboard from './components/Dashboard.jsx';
 import HistoricoVeiculo from './components/HistoricoVeiculo.jsx';
 import Financeiro from './components/Financeiro.jsx';
+import Orcamentos from './components/Orcamentos.jsx';
 import Estoque from './components/Estoque.jsx';
 import Backup from './components/Backup.jsx';
 import Clientes from './components/Clientes.jsx';
